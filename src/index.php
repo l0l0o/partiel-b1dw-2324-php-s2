@@ -1,6 +1,5 @@
 <?php 
 require_once __DIR__ . '/parts/header.php';
-
 $connectDatabase = new PDO("mysql:host=db;dbname=wordpress","root", "admin");
 $request = $connectDatabase->prepare("SELECT * FROM post");
 $request->execute();
@@ -30,7 +29,7 @@ $posts = $request->fetchAll();
                 <b>Prix :</b> <?= $post['prix'] ?>€
             </p>
 
-            <a href="#" class="btn btn-primary">Voir détails</a>
+            <a href="/pages/page_ticket_details.php?id=<?= $post['id'] ?>" class="btn btn-primary">Voir détails</a>
         </div>
     </div>
     <?php endforeach ?>
@@ -39,7 +38,7 @@ $posts = $request->fetchAll();
 
 
 <?php if(isset($_GET['success'])) :?>
-<div class="alert alert-success mt-2">
+<div class=" alert alert-success mt-2">
     <?php echo $_GET['success']; ?>
 </div>
 <?php endif; ?>
