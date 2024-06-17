@@ -9,7 +9,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
+
 <body>
-    <div class="container mt-5">
+    <nav class="navbar d-flex justify-content-center">
+        <a class="navbar-brand" href="../index.php">Évènements</a>
+        <a class="navbar-brand" href="/pages/page_new_ticket.php">Créer un évènement</a>
+    </nav>
+    <div class="container mt-5 ">
         <div class="row">
             <div class="col-md-12">
