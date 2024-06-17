@@ -10,6 +10,7 @@ $posts = $request->fetchAll();
 
 <h1>Détails de l'évènement</h1>
 <div class="container">
+
     <?php foreach($posts as $post) :?>
     <h2><?= $post['equipe1'] ?> - <?= $post["equipe2"] ?> (<?= $post['category'] ?>)</h2>
 
