@@ -1,6 +1,3 @@
-<?php 
-var_dump("hello world");
-?>
 <!doctype html>
 <html lang="en">
 
@@ -13,3 +10,6 @@ var_dump("hello world");
 </head>
 
 <body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
